@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2196F3"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewBeach"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/las_canteras"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Playa de Las Canteras"
+        android:layout_toRightOf="@id/imageViewBeach"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gran Canaria"
+        android:layout_below="@id/textViewName"
+        android:layout_toRightOf="@+id/imageViewBeach"
+        android:textColor="#BBDEFB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3100 metros de longitud"
+        android:layout_toRightOf="@id/imageViewBeach"
+        android:layout_below="@id/textViewPlace"
+        android:textColor="#BBDEFB"
+        android:textSize="16sp" />
+
+</RelativeLayout>
